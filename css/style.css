@@ -7,6 +7,17 @@ html, body{
     height: 100%;
 }
 
+.title img{
+    width: 50vw;
+    z-index: 999;
+    display: block;
+    margin: 0 auto;
+}
+
+.title{
+    background-color: #2d83f6;
+}
+
 body{
     margin:0;
     font-size: 18px;
@@ -76,12 +87,14 @@ input{
     text-align-last: left;
   }
 
-h1{
+
+
+/* h1{
     margin: 0;
     padding: 20px;
     text-align: center;
     font-size: 3vw;
-}
+} */
 
 .summary{
     display: flex;
@@ -306,11 +319,19 @@ body.appear #container{
         font-size: 18px;
         background: #fff;}
      
-     h1{
-        font-size: 32px;
+     .title img{
+        width: 350px;
+     }
+     .title{
         background-color: #2d83f6;
-        color:white;
+        width: 100%;
+        position:fixed;
+        top: 0;
+        z-index: 1000;
+     }
 
+     .result-text{
+        padding-top: 90px;
      }
 
      p{
