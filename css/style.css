@@ -297,6 +297,10 @@ body.appear #container{
     /* ----------------------
     ページ共通
      ---------------------- */
+     html{
+        background-color: #fff;
+     }
+
      body{
         margin:0;
         font-size: 18px;
