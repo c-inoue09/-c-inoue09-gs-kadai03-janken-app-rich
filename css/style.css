@@ -358,7 +358,9 @@ body.appear #container{
      .backpack-wrapper h2{
         font-size: 1.8rem;
      }
-
+     #user-name-display{
+        margin-bottom: 20px;
+     }
      #item-list{
         margin-bottom: 20px;
      }
