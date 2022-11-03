@@ -1,6 +1,10 @@
 @charset "utf-8";
 html{
-    font-size:62.5%; /* 16px × 62.5% = 10px */
+    font-size:62.5%; /* 16px × 62.5% = 10px */   
+}
+
+html, body{
+    height: 100%;
 }
 
 body{
@@ -20,8 +24,9 @@ body{
 
 
 .wrapper{
+    height: 100%;
     background-color: #fff;
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -44,6 +49,8 @@ input{
 .name-area-text p{
     font-weight: bold;
 }
+
+
 
 .sample-balloon {
     position: relative;
@@ -135,12 +142,10 @@ h1{
 
 .button-area{
     display: flex;
-    margin-bottom: 40px;
+    padding-bottom: 120px;
+    background-color: #fff;
 }
 
-.moblie{
-    display: none;
-}
 
 .button{
         appearance: none;
@@ -282,6 +287,11 @@ body.appear #container{
 }
 }
 
+@media screen and (min-width: 641px) {
+    .sp{
+        display: none;
+    }    
+  }
 
 @media screen and (max-width: 640px){
     /* ----------------------
@@ -294,6 +304,9 @@ body.appear #container{
      
      h1{
         font-size: 32px;
+        background-color: #2d83f6;
+        color:white;
+
      }
 
      p{
@@ -368,5 +381,13 @@ body.appear #container{
         font-size: 1rem;
     }
     
+    body.appear{
+        background:#fff;/*画面を開いた後の背景色を指定*/
+    }
+
+    #splash-logo img{
+        width: 300px;
+    }
+
 
     }
