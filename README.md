@@ -9,7 +9,7 @@
 
 ## ②工夫した点・こだわった点
 - 駄菓子情報や、組み合わせ情報を配列で記録
-  - 各お菓子の名前、値段、カロリーなどは配列に保存することで、コードを圧縮できた
+  - 各お菓子の名前、値段、カロリーなどは配列に保存することでコードを圧縮できた
 
 - ユーザの入力情報を別ページに持ち越し
   - スタート画面でユーザに名前を入力させ、localstorageを利用して結果の画面で使えるようにした
@@ -27,13 +27,12 @@
   - 栄養素のレーダーチャートなど
 
 ## ④質問・疑問・感想、シェアしたいこと等なんでも
-### 質問・疑問 
-
-- 名前欄を入力必須にしたかった
+- 名前欄を入力必須にしたかったのですが、うまくいかないのはなぜだろう…
   - inputエリアにrequired属性を入れたり、送信ボタンにbutton要素を使ったりしたのだが、入力必須にならず…。
 
-- Githubのpushがうまくいかない
-  - 
+- Githubのpushがうまくいかなかったけど、「Initialize this repository with a README」のせいだったようです
+  - READMEファイルの有無で、リモートリポジトリとローカルの commit履歴に競合が発生していたらしい
+  - いったんレポジトリを削除してしまい、「Initialize this repository with a README」にチェックを入れず再作成したらうまくいった
 
 ###  参考記事
 - JavaScript / jQuery
@@ -44,5 +43,5 @@
   - [placeholderの色を変える](https://code-kitchen.dev/css/placeholder/)
 
 - そのほか
-  - https://qiita.com/masakinihirota/items/1a657674e609be112fc6
+  - [gitにpushする際に失敗してしまいます。](https://teratail.com/questions/187949)
   - [今さら聞けない！GitHubの使い方【超初心者向け】](https://magazine.techacademy.jp/magazine/6235#ta-toc-4)
