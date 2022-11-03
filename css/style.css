@@ -330,9 +330,7 @@ body.appear #container{
         z-index: 1000;
      }
 
-     .result-text{
-        padding-top: 90px;
-     }
+
 
      p{
         font-size: 1.4rem;
@@ -369,9 +367,19 @@ body.appear #container{
         width: 70px;
         margin-right: 15px;
     }
+
+    .inoue{
+        padding-top: 90px;
+     }
+
         /* ----------------------
     gacha.html
      ---------------------- */
+
+     .result-text{
+        padding-top: 90px;
+     }
+
      .backpack-wrapper{
         margin:10px 10px 40px;
      }
