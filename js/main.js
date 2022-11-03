@@ -25,7 +25,7 @@ $("#mawasu-button").on("click",function(){
     localStorage.setItem("userNameKey",userName);
 });
 
-$("#clear").on("click",function(){
+$(".clear").on("click",function(){
     localStorage.removeItem("userNameKey");
     $("#user-name").val("");
 });
@@ -152,7 +152,7 @@ $(document).ready(function(){ //ページが読み込まれたら実行
         $("#summary-sentence").html(`<p>合計 ${totalNum}点 ${totalCost}円、${totalCalorie}kcal です！</p>`);
     
         let messageNumber = Math.floor(Math.random()* 5); //ランダムメッセージ用の乱数を発生
-        $("#random-message").html(randomMessage[messageNumber]);
+        $("#random-message").html(`<p>${randomMessage[messageNumber]}</p>`);
 });
 
 

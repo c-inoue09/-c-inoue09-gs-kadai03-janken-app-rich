@@ -34,6 +34,8 @@
   - READMEファイルの有無で、リモートリポジトリとローカルの commit履歴に競合が発生していたらしい
   - いったんレポジトリを削除してしまい、「Initialize this repository with a README」にチェックを入れず再作成したらうまくいった
 
+- レスポンシブのときだけボタンの順番を変えたい
+
 ###  参考記事
 - JavaScript / jQuery
   - [Progate JavaScript II 「繰り返し処理」「配列」「オブジェクト」](https://prog-8.com/lessons/es6/study/2)

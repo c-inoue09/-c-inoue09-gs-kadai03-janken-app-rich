@@ -23,7 +23,6 @@ body{
     background-color: #fff;
     width: 1000px;
     margin: 0 auto;
-    min-height: 1500px;
 }
 
 input{
@@ -74,6 +73,7 @@ h1{
     margin: 0;
     padding: 20px;
     text-align: center;
+    font-size: 3vw;
 }
 
 .summary{
@@ -135,7 +135,11 @@ h1{
 
 .button-area{
     display: flex;
-    margin-bottom: ;
+    margin-bottom: 40px;
+}
+
+.moblie{
+    display: none;
 }
 
 .button{
@@ -277,3 +281,92 @@ body.appear #container{
 	opacity: 1;
 }
 }
+
+
+@media screen and (max-width: 640px){
+    /* ----------------------
+    ページ共通
+     ---------------------- */
+     body{
+        margin:0;
+        font-size: 18px;
+        background: #fff;}
+     
+     h1{
+        font-size: 32px;
+     }
+
+     p{
+        font-size: 1.4rem;
+        margin: 0 0 10px 0;
+     }
+
+     .sample-balloon{
+        padding: 10px;
+     }
+
+    /* ----------------------
+    index.html
+     ---------------------- */
+
+     .wrapper{
+        width: 100%;
+
+     }
+
+     .button-area{
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .button{
+        margin-bottom: 20px;
+    }
+
+    .pc{
+        display: none;
+    }
+
+    .inoue-icon img{
+        width: 70px;
+        margin-right: 15px;
+    }
+        /* ----------------------
+    gacha.html
+     ---------------------- */
+     .backpack-wrapper{
+        margin:10px 10px 40px;
+     }
+
+     .backpack-wrapper h2{
+        font-size: 1.8rem;
+     }
+
+     #item-list{
+        margin-bottom: 20px;
+     }
+
+     .okashi-item{
+        background-color: #fff;
+        border: 1px;
+        width:120px;
+        border-radius: 20px;
+        margin: 8px;
+        padding: 5px;
+    }
+    .okashi-item img{
+        height: 60px;
+    }
+    
+    .okashi-item h3{
+        font-size: 1.2rem;
+        margin:0 0 10px;
+    }
+    
+    .okashi-item p{
+        margin-top:0px;
+        font-size: 1rem;
+    }
+    
+
+    }
