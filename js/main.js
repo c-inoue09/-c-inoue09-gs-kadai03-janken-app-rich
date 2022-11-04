@@ -52,10 +52,10 @@ const okashi = [  // お菓子リストを配列で定義
 const randomMessage = [ // サマリ用ランダムメッセージの配列
     "リュックに入らないなら、イノウエが食べてあげようか？",
     "おうちに帰るまでが 遠足ですよッ！",
-    "イノウエの ねるねるねるねは あげないよッ！",
+    "やはり甘味…!! 甘味は全てを解決する…!!",
     "ところで イノウエの酢昆布と ひとつ交換しない？",
     "知ってた？ キャベツ太郎にキャベツは入ってないらしい",
-    "やはり甘味…!! 甘味は全てを解決する…!!"
+    "イノウエの ねるねるねるねは あげないよッ！"
 ]
 
 zankin = 300; // 残りのお金計算用の変数
@@ -64,25 +64,25 @@ totalNum = 0; // サマリ用 個数累計
 totalCalorie = 0; // サマリ用 累計カロリー
 numItem = [0,0,0,0,0,0,0,0,0] //サマリ表示用 各お菓子の個数を記録
 
-    const gacha = (randomNumber)=>{
-        numItem[randomNumber] ++; //お菓子の種類ごとに個数をカウント
-        zankin = zankin - okashi[randomNumber].price;
-        totalNum ++; // これまでの個数累計をカウント
-        totalCost = totalCost + okashi[randomNumber].price // 累計金額をカウント
-        totalCalorie = totalCalorie + okashi[randomNumber].calorie; // これまでの累計カロリーをカウント
+const gacha = (randomNumber)=>{
+    numItem[randomNumber] ++; //お菓子の種類ごとに個数をカウント
+    zankin = zankin - okashi[randomNumber].price;
+    totalNum ++; // これまでの個数累計をカウント
+    totalCost = totalCost + okashi[randomNumber].price // 累計金額をカウント
+    totalCalorie = totalCalorie + okashi[randomNumber].calorie; // これまでの累計カロリーをカウント
 
-        $(".item-wrapper").append(
-            `<div class = "okashi-item">
-            <img src="img/okashi-${randomNumber}.jpeg" alt="${okashi[randomNumber].name}">
-            <h3>${okashi[randomNumber].name}</h3>
-            <p>${okashi[randomNumber].price}円 | ${okashi[randomNumber].calorie}kcal</p>
-            </div>`
-            );
+    $(".item-wrapper").append(
+        `<div class = "okashi-item">
+        <img src="img/okashi-${randomNumber}.jpeg" alt="${okashi[randomNumber].name}">
+        <h3>${okashi[randomNumber].name}</h3>
+        <p>${okashi[randomNumber].price}円 | ${okashi[randomNumber].calorie}kcal</p>
+        </div>`
+        );
 
-        console.log(`「${okashi[randomNumber].name}」を買いました`);
-        console.log(`お小遣いはのこり${zankin}円！`);
-        console.log(``);
-    }
+    console.log(`「${okashi[randomNumber].name}」を買いました`);
+    console.log(`お小遣いはのこり${zankin}円！`);
+    console.log(``);
+}
 
 
 $(document).ready(function(){ //ページが読み込まれたら実行
@@ -154,20 +154,6 @@ $(document).ready(function(){ //ページが読み込まれたら実行
         let messageNumber = Math.floor(Math.random()* 5); //ランダムメッセージ用の乱数を発生
         $("#random-message").html(`<p>${randomMessage[messageNumber]}</p>`);
 });
-
-
-
-
-
-
-// for (let i = 0; i < okashi.length; i++){
-//     if (numItem[i] = 0){
-//         ;
-//     }
-//     else{
-//         console.log(`・${okashi[i].name} ${okashi[i].price}円 × ${numItem[i]}個`);
-//     }
-// }
 
     
 
