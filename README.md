@@ -1,6 +1,6 @@
 # 「300円 おやつガチャ」
 
-<img src ="https://user-images.githubusercontent.com/113824527/199662219-b63cb411-639b-4003-ae58-b2cae771c671.png" width="600px">
+<img src ="https://user-images.githubusercontent.com/113824527/199857131-db86bd29-3d39-48e8-8637-89a089153915.png" width="600px">
 
 ## ①課題内容（どんな作品か）
 - 一時期バズっていた[「サイゼリヤ1,000円ガチャ」](https://saizeriya-1000yen.marusho.io/)にインスピレーションを受けて、予算300円以内に収まるよう ランダムで駄菓子の組み合わせを提案するアプリを作りました。
